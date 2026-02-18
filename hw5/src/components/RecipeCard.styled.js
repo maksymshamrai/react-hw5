@@ -5,8 +5,7 @@ export const Card = styled.div`
   background-color: #ffffff;
   border-radius: 16px;
   padding: 12px;
-  box-shadow: ${({ $hard }) =>
-    $hard ? "0 0 0 3px #ff6b6b" : "0 4px 12px rgba(0,0,0,0.1)"};
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 `;
 
 export const Image = styled.img`

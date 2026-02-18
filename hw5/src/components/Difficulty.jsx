@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const Title = styled.h4 `
+  font-size: 12px;
+  text-align: center;
+`;
+
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -16,11 +21,15 @@ const Badge = styled.span`
 
 function Difficulty({ level }) {
   return (
+    <>
+    <Title>Difficulty</Title>
     <Wrapper>
       <Badge active={level === 0}>Easy</Badge>
       <Badge active={level === 1}>Medium</Badge>
       <Badge active={level === 3}>Hard</Badge>
     </Wrapper>
+    </>
+    
   );
 }
 
